@@ -1,0 +1,19 @@
+{
+  "forge:conditions": {
+    "type": "forge:and",
+    "values": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "irons_spellbooks"
+      }
+    ]
+  },
+  "type": "origins:conditioned_attribute",
+  "modifiers": [
+    {
+      "attribute": "irons_spellbooks:max_mana",
+      "operation": "addition",
+      "value": 50
+    }
+  ]
+}

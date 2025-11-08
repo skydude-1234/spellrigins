@@ -1,8 +1,9 @@
 {
   "powers": [
-
+    "spellrigins:arcane_bonus",
+    "spellrigins:mana_bonus"
   ],
-  "icon": "minecraft:bow",
+  "icon": "irons_spellbooks:arcane_essence",
   "order": 1,
-  "impact": 3
+  "impact": 1
 }

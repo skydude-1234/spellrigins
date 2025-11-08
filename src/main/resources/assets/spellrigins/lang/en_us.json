@@ -1,3 +1,9 @@
 {
-  "layer.spellrigins.spell_affinity.name": "Spell Affinity"
+  "layer.spellrigins.spell_affinity.name": "Spell Affinity",
+  "origin.spellrigins.arcane.name": "Arcane",
+  "origin.spellrigins.arcane.description": "Jack of all spells, master of none",
+  "power.spellrigins.arcane_bonus.name": "Arcane Bonus",
+  "power.spellrigins.arcane_bonus.description": "Gain +10% spell power",
+  "power.spellrigins.mana_bonus.name": "More Mana!",
+  "power.spellrigins.mana_bonus.description": "Gain +50 maximum mana"
 }

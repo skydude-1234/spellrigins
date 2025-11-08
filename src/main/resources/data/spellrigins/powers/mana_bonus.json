@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Mana Bonus",
+    "attribute": "irons_spellbooks:max_mana",
+    "value": 50,
+    "operation": "addition"
+  }
+}
