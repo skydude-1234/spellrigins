@@ -139,6 +139,22 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    // due to bullshit origins forge outdates stuffs, need to import jar in a jar libs
+    flatDir {
+        dir 'libs'
+    }
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        name = 'C4s Maven'
+        url = 'https://maven.theillusivec4.top/'
+    }
+
+
 }
 
 dependencies {
@@ -166,6 +182,12 @@ dependencies {
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
+    //reqs
+    implementation  fg.deobf("top.theillusivec4.caelus:caelus-forge:3.1.0+1.20")
+    implementation  fg.deobf("io.github.edwinmindcraft:calio-forge:${minecraft_version}-${calio_version}")
+    implementation  fg.deobf("io.github.edwinmindcraft:apoli-forge:${minecraft_version}-${apoli_version}")
+    implementation  fg.deobf("io.github.edwinmindcraft:origins-forge:${minecraft_version}-${origins_version}-all")
+    implementation  fg.deobf("de.dafuqs:additionalentityattributes-forge:1.4.0.5+1.20.1")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -204,4 +226,8 @@ tasks.named('jar', Jar).configure {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+mixin {
+    //  refmap
+    add sourceSets.main, "mixins.dacxirons.refmap.json"
 }
