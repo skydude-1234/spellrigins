@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Ice Power",
+  "modifier": {
+    "name": "Fire Spell Bonus",
+    "attribute": "irons_spellbooks:ice_spell_power",
+    "value": 0.3,
+    "operation": "multiply_base"
+  }
+}

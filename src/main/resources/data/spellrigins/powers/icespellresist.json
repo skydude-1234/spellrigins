@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "name": "Frozen Descent",
+  "modifier": {
+    "attribute": "irons_spellbooks:ice_magic_resist",
+    "value": 1,
+    "operation": "addition"
+  }
+}

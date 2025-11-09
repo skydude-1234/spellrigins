@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "spellrigins:ice_bonus_specialist",
+    "spellrigins:fire_fragility",
+    "spellrigins:spellfreeze",
+    "spellrigins:icespellresist",
+    "spellrigins:lossofknowledge_blood",
+    "spellrigins:lossofknowledge_eldritch",
+    "spellrigins:lossofknowledge_holy",
+    "spellrigins:lossofknowledge_nature",
+    "spellrigins:lossofknowledge_lightning",
+    "spellrigins:lossofknowledge_evocation",
+    "spellrigins:lossofknowledge_ender",
+    "spellrigins:lossofknowledge_aqua",
+    "spellrigins:lossofknowledge"
+  ],
+  "icon": "irons_spellbooks:ice_upgrade_orb",
+  "order": 6,
+  "impact": 3,
+  "name": "Ice Specialist"
+}

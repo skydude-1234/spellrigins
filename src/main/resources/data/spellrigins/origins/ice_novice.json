@@ -1,0 +1,9 @@
+{
+  "powers": [
+    "spellrigins:ice_bonus_novice"
+  ],
+  "icon": "irons_spellbooks:frozen_bone",
+  "order": 4,
+  "impact": 1,
+  "name": "Ice Novice"
+}

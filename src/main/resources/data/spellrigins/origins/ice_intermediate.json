@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "spellrigins:ice_bonus_intermediate",
+    "spellrigins:fire_weakness",
+    "spellrigins:spellfreeze"
+  ],
+  "icon": "irons_spellbooks:ice_rune",
+  "order": 5,
+  "impact": 2,
+  "name": "Ice Intermediate"
+}

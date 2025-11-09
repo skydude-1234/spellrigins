@@ -6,6 +6,9 @@
     "spellrigins:arcane",
     "spellrigins:fire_novice",
     "spellrigins:fire_intermediate",
-    "spellrigins:fire_specialist"
+    "spellrigins:fire_specialist",
+    "spellrigins:ice_novice",
+    "spellrigins:ice_intermediate",
+    "spellrigins:ice_specialist"
   ]
 }

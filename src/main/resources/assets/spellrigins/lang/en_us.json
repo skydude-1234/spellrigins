@@ -23,5 +23,16 @@
   "power.spellrigins.lossofknowledge.description": "As you engulf into your favourite schoool, you lose 10% power in all other schools",
   "origin.spellrigins.fire_specialist.description": "A master of flames, all you care about is arson",
   "origin.spellrigins.fire_novice.description": "Fire is pretty cool, I guess",
-  "power.spellrigins.firespellresist.description": "All that training made you resistant to fire spells"
+  "power.spellrigins.firespellresist.description": "All that training made you resistant to fire spells",
+  "origin.spellrigins.ice_novice.description": "I like snow",
+  "power.spellrigins.ice_bonus_novice.description": "Gain +15% ice spell power",
+  "origin.spellrigins.ice_intermediate.description": "Engage enemies with powerful freezing spells, but become weak with fire spells",
+  "power.spellrigins.fire_weakness.name": "Fire Weakness",
+  "power.spellrigins.fire_weakness.description": "You are weak to & with fire spells",
+  "power.spellrigins.ice_bonus_intermediate.description": "Gain +20% ice spell power",
+  "power.spellrigins.spellfreeze.description": "Your spells freeze enemies for 10s",
+  "power.spellrigins.icespellresist.description": "The ice cannot be frozen, and neither can you. Gain resistance to ice spells",
+  "power.spellrigins.ice_bonus_specialist.description": "Gain +30% ice spell power",
+  "power.spellrigins.fire_fragility.description": "You are very weak to & with fire spells",
+  "origin.spellrigins.ice_specialist.description": "It has been long since you have seen anything other than the white and blue glory of the arctic"
 }
