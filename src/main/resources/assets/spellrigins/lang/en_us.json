@@ -13,5 +13,6 @@
   "power.spellrigins.ice_weakness.name": "Ice Weakness",
   "power.spellrigins.ice_weakness.description": "You are weak to ice spells",
   "power.spellrigins.aqua_weakness.name": "Aqua Weakness",
-  "power.spellrigins.aqua_weakness.description": "You are weak to aqua spells"
+  "power.spellrigins.aqua_weakness.description": "You are weak to aqua spells",
+  "power.spellrigins.spellflame.description": "Your spells set enemies on fire for 10s"
 }

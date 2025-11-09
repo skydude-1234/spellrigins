@@ -1,5 +1,7 @@
 package com.skydude.spellrigins;
 
+import io.github.apace100.apoli.component.PowerHolderComponent;
+import io.github.apace100.apoli.power.PowerType;
 import io.github.apace100.origins.component.OriginComponent;
 import io.github.apace100.origins.origin.OriginLayer;
 import io.github.apace100.origins.origin.OriginLayers;
@@ -24,6 +26,8 @@ import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Optional;
 
 import static io.github.apace100.origins.command.OriginArgumentType.getOrigin;
@@ -32,7 +36,6 @@ import static io.github.apace100.origins.command.OriginArgumentType.getOrigin;
 @Mod.EventBusSubscriber
 public class spellattackevent {
 
-    private static final Logger log = LoggerFactory.getLogger(spellattackevent.class);
 
     @SubscribeEvent
     public static void spelldmgevent(SpellDamageEvent event) {
@@ -49,12 +52,16 @@ public class spellattackevent {
 
 
             // command run
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "origin has " + player.getName().getString() + " spellrigins:spell_affinity" + " spellrigins:fire") == 1){
+            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellflame") == 1){
                 event.getEntity().setSecondsOnFire(10);
             }
 
 
 
+
+
         }
     }
+
+
 }

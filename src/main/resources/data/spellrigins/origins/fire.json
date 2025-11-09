@@ -2,7 +2,8 @@
   "powers": [
     "spellrigins:fire_bonus",
     "spellrigins:ice_weakness",
-    "spellrigins:water_weakness"
+    "spellrigins:water_weakness",
+    "spellrigins:spellflame"
   ],
   "icon": "irons_spellbooks:fire_upgrade_orb",
   "order": 2,
