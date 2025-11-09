@@ -5,5 +5,13 @@
   "power.spellrigins.arcane_bonus.name": "Arcane Bonus",
   "power.spellrigins.arcane_bonus.description": "Gain +10% spell power",
   "power.spellrigins.mana_bonus.name": "More Mana!",
-  "power.spellrigins.mana_bonus.description": "Gain +50 maximum mana"
+  "power.spellrigins.mana_bonus.description": "Gain +50 maximum mana",
+  "origin.spellrigins.fire.name": "Fire",
+  "origin.spellrigins.fire.description": "As a lover of wilding flames, you gain superiority in fire spells but lack affinity in water-based spells",
+  "power.spellrigins.fire_bonus.name": "Fire Power",
+  "power.spellrigins.fire_bonus.description": "Gain +20% fire spell power",
+  "power.spellrigins.ice_weakness.name": "Ice Weakness",
+  "power.spellrigins.ice_weakness.description": "You are weak to ice spells",
+  "power.spellrigins.aqua_weakness.name": "Aqua Weakness",
+  "power.spellrigins.aqua_weakness.description": "You are weak to aqua spells"
 }

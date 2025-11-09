@@ -3,6 +3,7 @@
   "order": 11,
   "enabled": true,
   "origins": [
-    "spellrigins:arcane"
+    "spellrigins:arcane",
+    "spellrigins:fire"
   ]
 }

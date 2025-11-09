@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:fire_bonus",
+    "spellrigins:ice_weakness",
+    "spellrigins:water_weakness"
+  ],
+  "icon": "irons_spellbooks:fire_upgrade_orb",
+  "order": 2,
+  "impact": 1
+}

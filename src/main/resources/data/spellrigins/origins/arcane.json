@@ -3,7 +3,7 @@
     "spellrigins:arcane_bonus",
     "spellrigins:mana_bonus"
   ],
-  "icon": "irons_spellbooks:arcane_essence",
+  "icon": "irons_spellbooks:mana_upgrade_orb",
   "order": 1,
   "impact": 1
 }
