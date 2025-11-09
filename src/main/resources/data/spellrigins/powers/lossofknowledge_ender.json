@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "hidden": "true",
+  "modifier": {
+    "attribute": "irons_spellbooks:ender_spell_power",
+    "value": -0.1,
+    "operation": "multiply_base"
+  }
+}

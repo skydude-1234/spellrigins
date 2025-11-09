@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:fire_bonus_intermediate",
+    "spellrigins:ice_weakness",
+    "spellrigins:water_weakness",
+    "spellrigins:spellflame"
+  ],
+  "icon": "minecraft:blaze_rod",
+  "order": 3,
+  "impact": 2,
+  "name": "Fire Intermediate"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "name": "Friendly Fire",
+  "modifier": {
+    "attribute": "irons_spellbooks:fire_magic_resist",
+    "value": 1,
+    "operation": "addition"
+  }
+}

@@ -1,7 +1,6 @@
 {
   "type": "apoli:attribute",
   "modifier": {
-    "name": "Arcane Spell Bonus",
     "attribute": "irons_spellbooks:spell_power",
     "value": 0.1,
     "operation": "multiply_base"

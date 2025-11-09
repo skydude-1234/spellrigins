@@ -4,6 +4,8 @@
   "enabled": true,
   "origins": [
     "spellrigins:arcane",
-    "spellrigins:fire"
+    "spellrigins:fire_novice",
+    "spellrigins:fire_intermediate",
+    "spellrigins:fire_specialist"
   ]
 }

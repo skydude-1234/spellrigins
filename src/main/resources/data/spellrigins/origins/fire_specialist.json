@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "spellrigins:fire_bonus_specialist",
+    "spellrigins:ice_fragility",
+    "spellrigins:water_fragility",
+    "spellrigins:spellflame",
+    "spellrigins:firespellresist",
+    "spellrigins:lossofknowledge_blood",
+    "spellrigins:lossofknowledge_eldritch",
+    "spellrigins:lossofknowledge_holy",
+    "spellrigins:lossofknowledge_nature",
+    "spellrigins:lossofknowledge_lightning",
+    "spellrigins:lossofknowledge_evocation",
+    "spellrigins:lossofknowledge_ender",
+    "spellrigins:lossofknowledge"
+  ],
+  "icon": "irons_spellbooks:fire_upgrade_orb",
+  "order": 4,
+  "impact": 3,
+  "name": "Fire Specialist"
+}

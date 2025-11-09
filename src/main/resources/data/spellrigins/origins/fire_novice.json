@@ -1,0 +1,9 @@
+{
+  "powers": [
+    "spellrigins:fire_bonus_novice"
+  ],
+  "icon": "minecraft:blaze_powder",
+  "order": 2,
+  "impact": 1,
+  "name": "Fire Novice"
+}
