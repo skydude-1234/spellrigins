@@ -9,6 +9,9 @@
     "spellrigins:fire_specialist",
     "spellrigins:ice_novice",
     "spellrigins:ice_intermediate",
-    "spellrigins:ice_specialist"
+    "spellrigins:ice_specialist",
+    "spellrigins:nature_novice",
+    "spellrigins:nature_intermediate",
+    "spellrigins:nature_specialist"
   ]
 }

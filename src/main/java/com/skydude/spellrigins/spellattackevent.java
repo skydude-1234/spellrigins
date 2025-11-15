@@ -14,12 +14,14 @@ import io.github.apace100.origins.command.OriginArgumentType;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
+import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -56,11 +58,16 @@ public class spellattackevent {
 
 
             // command run
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellflame") == 1){
+            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:fire/spellflame") == 1){
                 event.getEntity().setSecondsOnFire(10);
 
             }  if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellfreeze") == 1){
                 event.getEntity().setTicksFrozen(10);
+
+            }
+            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:nature/naturesblight") == 1){
+                event.getEntity().addEffect(new MobEffectInstance(MobEffectRegistry.BLIGHT.get(), 20000, 2));
+                System.out.println("de");
 
             }
             }

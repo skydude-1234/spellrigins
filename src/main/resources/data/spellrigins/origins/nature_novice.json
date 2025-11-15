@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:nature/nature_bonus_novice"
+  ],
+  "description": "Plants are cool",
+  "icon": "minecraft:poisonous_potato",
+  "order": 6,
+  "impact": 1,
+  "name": "Nature Novice"
+}

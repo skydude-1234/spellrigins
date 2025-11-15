@@ -1,6 +1,6 @@
 {
   "powers": [
-    "spellrigins:fire_bonus_novice"
+    "spellrigins:fire/fire_bonus_novice"
   ],
   "icon": "minecraft:blaze_rod",
   "order": 2,

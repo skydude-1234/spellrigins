@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "spellrigins:nature/nature_bonus_specialist",
+    "spellrigins:ice_fragility",
+    "spellrigins:water_fragility",
+    "spellrigins:nature/naturesblight",
+    "spellrigins:firespellresist",
+    "spellrigins:lon/lossofknowledge_blood",
+    "spellrigins:lon/lossofknowledge_eldritch",
+    "spellrigins:lon/lossofknowledge_holy",
+    "spellrigins:lon/lossofknowledge_fire",
+    "spellrigins:lon/lossofknowledge_lightning",
+    "spellrigins:lon/lossofknowledge_evocation",
+    "spellrigins:lon/lossofknowledge_ender",
+    "spellrigins:lon/lossofknowledge"
+  ],
+  "icon": "irons_spellbooks:nature_upgrade_orb",
+  "order": 8,
+  "impact": 3,
+  "name": "Nature Specialist"
+}

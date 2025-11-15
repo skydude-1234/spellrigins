@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+
+    "attribute": "irons_spellbooks:nature_spell_power",
+    "value": 0.15,
+    "operation": "multiply_base"
+  }
+}

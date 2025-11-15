@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Nature Spell Bonus",
+    "attribute": "irons_spellbooks:nature_spell_power",
+    "value": 0.3,
+    "operation": "multiply_base"
+  }
+}

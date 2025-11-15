@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:nature/nature_bonus_intermediate",
+    "spellrigins:fire_weakness",
+    "spellrigins:nature/naturesblight"
+  ],
+  "icon": "irons_spellbooks:nature_rune",
+  "order": 7,
+  "impact": 2,
+  "name": "Nature Intermediate",
+  "description": "You are ferocious in the way of mother earth, the wilderness is your friend"
+}

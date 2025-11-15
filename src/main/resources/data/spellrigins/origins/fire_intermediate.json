@@ -1,9 +1,9 @@
 {
   "powers": [
-    "spellrigins:fire_bonus_intermediate",
-    "spellrigins:fire_weakness",
-    "spellrigins:water_weakness",
-    "spellrigins:spellflame"
+    "spellrigins:fire/fire_bonus_intermediate",
+    "spellrigins:fire/aqua_weakness",
+    "spellrigins:fire/ice_weakness",
+    "spellrigins:fire/spellflame"
   ],
   "icon": "irons_spellbooks:fire_rune",
   "order": 3,
