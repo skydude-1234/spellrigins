@@ -1,8 +1,7 @@
 {
   "powers": [
     "spellrigins:nature/nature_bonus_specialist",
-    "spellrigins:ice_fragility",
-    "spellrigins:water_fragility",
+    "spellrigins:fire_fragility",
     "spellrigins:nature/naturesblight",
     "spellrigins:firespellresist",
     "spellrigins:lon/lossofknowledge_blood",

@@ -39,6 +39,8 @@
   "power.spellrigins.nature/nature_bonus_novice.description": "Gain +15% nature spell power",
   "power.spellrigins.nature/nature_bonus_intermediate.name": "Nature Power",
   "power.spellrigins.nature/nature_bonus_intermediate.description": "Gain +20% nature spell power",
-
-  "power.spellrigins.nature/naturesblight.description": "Each spell you cast slightly blights your enemy, reducing their healing and damage"
+  "power.spellrigins.nature/nature_bonus_specialist.name": "Nature Power",
+  "power.spellrigins.nature/nature_bonus_specialist.description": "Gain + 30% nature spell power",
+  "power.spellrigins.nature/naturesblight.description": "Each spell you cast slightly blights your enemy, reducing their healing and damage",
+  "origin.spellrigins.nature_specialist.description": "You are one with mother earth, you know are entangled within your own grasp and develop hatred for the flames that extenguish your habitat"
 }
