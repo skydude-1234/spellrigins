@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "spellrigins:holy/holy_bonus_intermediate",
+    "spellrigins:holy/smite"
+  ],
+  "icon": "irons_spellbooks:holy_rune",
+  "order": 10,
+  "impact": 2,
+  "name": "Holy Intermediate",
+  "description": "A strong believer"
+}

@@ -12,18 +12,27 @@ import io.github.edwinmindcraft.origins.api.origin.Origin;
 import io.github.apace100.origins.command.OriginCommand;
 import io.github.apace100.origins.command.OriginArgumentType;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
-import io.redspace.ironsspellbooks.damage.DamageSources;
+import io.redspace.ironsspellbooks.api.events.SpellOnCastEvent;
+import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
+import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentContents;
+import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.FormattedCharSequence;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraftforge.common.util.LazyOptional;
@@ -70,9 +79,24 @@ public class spellattackevent {
                 System.out.println("de");
 
             }
+            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:holy/smite") == 1) {
+                if(event.getEntity().getMobType() == MobType.UNDEAD) {
+                    event.getEntity().hurt(event.getEntity().damageSources().magic(), (float) (event.getAmount() * 0.1));
+                }
+            }
+
             }
 
     }
+  @SubscribeEvent
+    public static void spellcast(SpellPreCastEvent event){
+      if(event.getEntity().getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + event.getEntity().getName().getString() + " spellrigins:holy/bowonlytogod") == 1) {
 
+          if (event.getSchoolType() == SchoolRegistry.BLOOD.get() | event.getSchoolType() == SchoolRegistry.ELDRITCH.get()) {
+              event.setCanceled(true);
+              event.getEntity().sendSystemMessage(Component.literal("Bow only to god"));
+          }
+      }
+  }
 
 }

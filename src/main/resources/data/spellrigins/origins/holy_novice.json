@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:holy/holy_bonus_novice"
+  ],
+  "description": "A bit religious",
+  "icon": "irons_spellbooks:divine_pearl",
+  "order": 9,
+  "impact": 1,
+  "name": "Holy Novice"
+}

@@ -1,0 +1,35 @@
+{
+  "type": "origins:multiple",
+  "name": "Bow only to god",
+  "protect": {
+    "type": "apoli:attribute",
+    "modifiers": [
+      {
+        "attribute": "irons_spellbooks:blood_magic_resist",
+        "value": 10,
+        "operation": "addition"
+      },
+      {
+        "attribute": "irons_spellbooks:eldritch_magic_resist",
+        "value": 10,
+        "operation": "addition"
+      }
+    ]
+  },
+  "power": {
+    "type": "apoli:attribute",
+    "modifiers": [
+      {
+        "attribute": "irons_spellbooks:blood_spell_power",
+        "value": -100,
+        "operation": "addition"
+      },
+      {
+        "attribute": "irons_spellbooks:eldritch_spell_power",
+        "value": -100,
+        "operation": "addition"
+      }
+    ]
+  }
+}
+
