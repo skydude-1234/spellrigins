@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:lightning/lightning_bonus_novice"
+  ],
+  "icon": "irons_spellbooks:lightning_bottle",
+  "description": "Electricityyyyy",
+  "order": 4,
+  "impact": 1,
+  "name": "Lightning Novice"
+}

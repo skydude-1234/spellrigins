@@ -1,0 +1,8 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "attribute": "irons_spellbooks:lightning_spell_power",
+    "value": 0.20,
+    "operation": "multiply_base"
+  }
+}

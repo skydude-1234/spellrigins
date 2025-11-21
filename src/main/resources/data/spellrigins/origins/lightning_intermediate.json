@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:lightning/lightning_bonus_intermediate",
+    "spellrigins:fire_weakness",
+    "spellrigins:lightning/lightningsummon",
+    "spellrigins:spellfreeze"
+  ],
+  "icon": "irons_spellbooks:ice_rune",
+  "order": 5,
+  "impact": 2,
+  "name": "Lightning Intermediate"
+}

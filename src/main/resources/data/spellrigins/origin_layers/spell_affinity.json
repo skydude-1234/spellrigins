@@ -15,6 +15,9 @@
     "spellrigins:nature_specialist",
     "spellrigins:holy_novice",
     "spellrigins:holy_intermediate",
-    "spellrigins:holy_specialist"
+    "spellrigins:holy_specialist",
+    "spellrigins:lightning_novice",
+    "spellrigins:lightning_intermediate",
+    "spellrigins:lightning_specialist"
   ]
 }

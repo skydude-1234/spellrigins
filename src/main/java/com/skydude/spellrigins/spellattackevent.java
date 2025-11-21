@@ -14,6 +14,7 @@ import io.github.apace100.origins.command.OriginArgumentType;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
 import io.redspace.ironsspellbooks.api.events.SpellOnCastEvent;
 import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
@@ -35,7 +36,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
@@ -60,7 +63,6 @@ public class spellattackevent {
 
             // ommand source
             CommandSourceStack silentSource = player.createCommandSourceStack()
-
                     .withSuppressedOutput() // suppress success/failure feedback
                     .withPermission(4);     // make sure it can run admin commands
 
@@ -84,6 +86,19 @@ public class spellattackevent {
                     event.getEntity().hurt(event.getEntity().damageSources().magic(), (float) (event.getAmount() * 0.1));
                 }
             }
+            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
+                if (Math.random() < 0.4 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
+
+                    System.out.println(" BOMBOGLIT" + 0.4 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get()) );
+
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + (event.getEntity().getX() + 5) + " " + event.getEntity().getY() + " " + event.getEntity().getZ());
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + (event.getEntity().getX() + 5) + " " + event.getEntity().getY() + " " + event.getEntity().getZ());
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + event.getEntity().getX() + " " + event.getEntity().getY() + " " + (event.getEntity().getZ() + 5));
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + event.getEntity().getX() + " " + event.getEntity().getY() + " " + (event.getEntity().getZ() - 5));
+                } else {
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + player.getX() + " " + player.getY() + " " + player.getZ());
+                }
+            }
 
             }
 
@@ -98,5 +113,17 @@ public class spellattackevent {
           }
       }
   }
+    @SubscribeEvent
+    public static void takelightningdamage(LivingDamageEvent event) {
+        if (event.getSource().is(DamageTypes.LIGHTNING_BOLT)) {
+            // server only
+            if (event.getEntity() instanceof ServerPlayer player) {
 
+                if (player.getServer().getCommands().performPrefixedCommand(player.createCommandSourceStack().withSuppressedOutput() .withPermission(4) , "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
+
+                    event.setAmount(event.getAmount() / 3);
+                }
+            }
+        }
+    }
 }
