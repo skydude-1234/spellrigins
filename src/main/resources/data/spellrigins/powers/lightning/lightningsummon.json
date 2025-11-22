@@ -1,4 +1,5 @@
 {
   "type": "origins:multiple",
-  "name": "Lightning Bolt"
+  "name": "Lightning Bolt",
+  "description": "You have a 30% chance to summon lightning onto the enemy, but a 70% chance to summon lightning onto yourself. Chance scales with lightning power"
 }

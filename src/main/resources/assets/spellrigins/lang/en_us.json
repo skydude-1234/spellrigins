@@ -6,7 +6,7 @@
   "power.spellrigins.arcane_bonus.description": "Gain +10% spell power",
   "power.spellrigins.mana_bonus.name": "More Mana!",
   "power.spellrigins.mana_bonus.description": "Gain +50 maximum mana",
-  "origin.spellrigins.fire/fire_intermediate.description": "As a lover of wilding flames, you gain superiority in fire spells but lack affinity in water-based spells",
+  "origin.spellrigins.fire_intermediate.description": "As a lover of wilding flames, you gain superiority in fire spells but lack affinity in water-based spells",
   "power.spellrigins.fire/fire_bonus_novice.name": "Fire Power",
   "power.spellrigins.fire/fire_bonus_intermediate.name": "Fire Power",
   "power.spellrigins.fire/fire_bonus_specialist.name": "Fire Power",

@@ -1,5 +1,7 @@
 {
   "type": "apoli:attribute",
+  "name": "Lightning Power",
+  "description": "Gain +30% lightning power",
   "modifier": {
     "attribute": "irons_spellbooks:lightning_spell_power",
     "value": 0.30,

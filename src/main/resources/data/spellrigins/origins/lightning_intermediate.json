@@ -1,11 +1,10 @@
 {
   "powers": [
     "spellrigins:lightning/lightning_bonus_intermediate",
-    "spellrigins:fire_weakness",
-    "spellrigins:lightning/lightningsummon",
-    "spellrigins:spellfreeze"
+    "spellrigins:lightning/lightningsummon"
   ],
-  "icon": "irons_spellbooks:ice_rune",
+  "icon": "irons_spellbooks:lightning_rune",
+  "description": "Power is not to be messed with",
   "order": 5,
   "impact": 2,
   "name": "Lightning Intermediate"

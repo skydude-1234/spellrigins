@@ -87,9 +87,8 @@ public class spellattackevent {
                 }
             }
             if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
-                if (Math.random() < 0.4 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
+                if (Math.random() < 0.3 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
 
-                    System.out.println(" BOMBOGLIT" + 0.4 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get()) );
 
                     player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + (event.getEntity().getX() + 5) + " " + event.getEntity().getY() + " " + event.getEntity().getZ());
                     player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + (event.getEntity().getX() + 5) + " " + event.getEntity().getY() + " " + event.getEntity().getZ());
