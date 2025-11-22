@@ -1,0 +1,20 @@
+{
+  "type": "origins:multiple",
+  "name": "Holy Fragility",
+  "description": "You are very weak with and to holy spells",
+  "aqua": {
+    "type": "apoli:attribute",
+    "modifiers": [
+      {
+        "attribute": "irons_spellbooks:holy_magic_resist",
+        "value": -0.6,
+        "operation": "multiply_base"
+      },
+      {
+        "attribute": "irons_spellbooks:holy_spell_power",
+        "value": -0.5,
+        "operation": "multiply_base"
+      }
+    ]
+  }
+}

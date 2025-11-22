@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "spellrigins:blood/blood_bonus_novice"
+  ],
+  "icon": "irons_spellbooks:blood_vial",
+  "order": 2,
+  "impact": 1,
+
+  "name": "Blood Novice",
+  "description": "A bit of bloodshed"
+}

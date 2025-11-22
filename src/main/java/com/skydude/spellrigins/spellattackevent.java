@@ -1,5 +1,11 @@
 package com.skydude.spellrigins;
 
+import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
+import io.redspace.ironsspellbooks.api.magic.MagicData;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
+
+
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.apace100.apoli.power.PowerType;
 import io.github.apace100.origins.component.OriginComponent;
@@ -16,6 +22,8 @@ import io.redspace.ironsspellbooks.api.events.SpellOnCastEvent;
 import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.minecraft.commands.CommandSourceStack;
@@ -67,27 +75,23 @@ public class spellattackevent {
                     .withPermission(4);     // make sure it can run admin commands
 
 
-
             // command run
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:fire/spellflame") == 1){
+            if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:fire/spellflame") == 1) {
                 event.getEntity().setSecondsOnFire(10);
 
-            }  if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellfreeze") == 1){
+            } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellfreeze") == 1) {
                 event.getEntity().setTicksFrozen(10);
 
-            }
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:nature/naturesblight") == 1){
+            } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:nature/naturesblight") == 1) {
                 event.getEntity().addEffect(new MobEffectInstance(MobEffectRegistry.BLIGHT.get(), 20000, 2));
                 System.out.println("de");
 
-            }
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:holy/smite") == 1) {
-                if(event.getEntity().getMobType() == MobType.UNDEAD) {
+            } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:holy/smite") == 1) {
+                if (event.getEntity().getMobType() == MobType.UNDEAD) {
                     event.getEntity().hurt(event.getEntity().damageSources().magic(), (float) (event.getAmount() * 0.1));
                 }
-            }
-            if(player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
-                if (Math.random() < 0.3 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
+            } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
+                if (Math.random() <= 0.3 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
 
 
                     player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + (event.getEntity().getX() + 5) + " " + event.getEntity().getY() + " " + event.getEntity().getZ());
@@ -97,10 +101,13 @@ public class spellattackevent {
                 } else {
                     player.getServer().getCommands().performPrefixedCommand(silentSource, "summon minecraft:lightning_bolt " + player.getX() + " " + player.getY() + " " + player.getZ());
                 }
-            }
+            } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:blood/devour") == 1) {
+                if (Math.random() <= 0.1 * attacker.getAttributeValue(AttributeRegistry.BLOOD_SPELL_POWER.get())) {
+                    player.getServer().getCommands().performPrefixedCommand(silentSource, "cast " +  player.getName().getString() + " devour " + 3);
 
+                }
             }
-
+        }
     }
   @SubscribeEvent
     public static void spellcast(SpellPreCastEvent event){

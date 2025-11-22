@@ -18,6 +18,9 @@
     "spellrigins:holy_specialist",
     "spellrigins:lightning_novice",
     "spellrigins:lightning_intermediate",
-    "spellrigins:lightning_specialist"
+    "spellrigins:lightning_specialist",
+    "spellrigins:blood_novice",
+    "spellrigins:blood_intermediate",
+    "spellrigins:blood_specialist"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Blood Power",
+  "description": "Gain +20% blood spell power",
+  "modifier": {
+    "attribute": "irons_spellbooks:blood_spell_power",
+    "value": 0.2,
+    "operation": "multiply_base"
+  }
+}

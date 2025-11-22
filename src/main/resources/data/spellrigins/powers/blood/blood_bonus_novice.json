@@ -1,0 +1,11 @@
+{
+  "type": "apoli:attribute",
+  "name": "Blood Power",
+  "description": "Gain +15% blood spell power",
+  "modifier": {
+
+    "attribute": "irons_spellbooks:holy_spell_power",
+    "value": 0.15,
+    "operation": "multiply_base"
+  }
+}

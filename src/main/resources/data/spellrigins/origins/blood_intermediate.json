@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:blood/blood_bonus_intermediate",
+    "spellrigins:holy_weakness",
+    "spellrigins:blood/devour"
+  ],
+  "icon": "irons_spellbooks:blood_rune",
+  "order": 3,
+  "impact": 2,
+  "name": "Blood Intermediate",
+  "description": "My enemies bleed from my sight"
+}

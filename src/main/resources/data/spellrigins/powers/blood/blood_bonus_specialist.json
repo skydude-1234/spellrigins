@@ -1,0 +1,11 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Nature Spell Bonus",
+    "attribute": "irons_spellbooks:holy_spell_power",
+    "value": 0.3,
+    "operation": "multiply_base"
+  },
+  "description": "Gain +30% blood spell power",
+  "name": "Blood Power"
+}

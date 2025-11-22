@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "spellrigins:blood/blood_bonus_specialist",
+    "spellrigins:holy_fragility",
+    "spellrigins:blood/devour",
+    "spellrigins:lon/lossofknowledge",
+    "spellrigins:lon/lossofknowledge_fire",
+    "spellrigins:lon/lossofknowledge_eldritch",
+    "spellrigins:lon/lossofknowledge_holy",
+    "spellrigins:lon/lossofknowledge_nature",
+    "spellrigins:lon/lossofknowledge_lightning",
+    "spellrigins:lon/lossofknowledge_evocation",
+    "spellrigins:lon/lossofknowledge_ender",
+    "spellrigins:lon/lossofknowledge_ice",
+    "spellrigins:lon/lossofknowledge_aqua"
+  ],
+  "icon": "irons_spellbooks:blood_upgrade_orb",
+  "order": 4,
+  "impact": 3,
+  "name": "Blood Specialist",
+  "description": "The master of blood bending"
+}
