@@ -1,0 +1,5 @@
+{
+  "type": "origins:multiple",
+  "name": "Evoke Vex",
+  "description": "You have a 10% chance to summon 2 vexes to help you fight. Chance scales with evocation power"
+}

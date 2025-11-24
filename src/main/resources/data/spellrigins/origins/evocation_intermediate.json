@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:evocation/evocation_bonus_intermediate",
+    "spellrigins:evocation/evocationsummon",
+    "spellrigins:evocation/blood_weakness"
+  ],
+  "icon": "irons_spellbooks:evocation_rune",
+  "order": 5,
+  "impact": 2,
+  "name": "Evocation Intermediate",
+  "description": "Pillager student in the Evoker University of Spells"
+}

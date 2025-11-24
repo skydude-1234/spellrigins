@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Evocation Power",
+  "description": "Gain +20% evocation power",
+  "modifier": {
+    "attribute": "irons_spellbooks:evocation_spell_power",
+    "value": 0.20,
+    "operation": "multiply_base"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "origins:multiple",
+  "name": "Blood Weakness",
+  "description": "You are very weak with & to blood spells",
+  "aqua": {
+    "type": "apoli:attribute",
+    "modifiers": [
+      {
+        "attribute": "irons_spellbooks:blood_magic_resist",
+        "value": -0.6,
+        "operation": "multiply_base"
+      },
+      {
+        "attribute": "irons_spellbooks:blood_spell_power",
+        "value": -0.5,
+        "operation": "multiply_base"
+      }
+    ]
+  }
+}

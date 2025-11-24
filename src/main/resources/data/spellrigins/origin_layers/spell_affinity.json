@@ -21,6 +21,9 @@
     "spellrigins:lightning_specialist",
     "spellrigins:blood_novice",
     "spellrigins:blood_intermediate",
-    "spellrigins:blood_specialist"
+    "spellrigins:blood_specialist",
+    "spellrigins:evocation_novice",
+    "spellrigins:evocation_intermediate",
+    "spellrigins:evocation_specialist"
   ]
 }

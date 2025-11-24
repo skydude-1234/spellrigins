@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "spellrigins:evocation/evocation_bonus_specialist",
+    "spellrigins:evocation/evocationsummon",
+    "spellrigins:evocation/blood_fragility",
+    "spellrigins:lon/lossofknowledge_blood",
+    "spellrigins:lon/lossofknowledge_eldritch",
+    "spellrigins:lon/lossofknowledge_holy",
+    "spellrigins:lon/lossofknowledge_nature",
+    "spellrigins:lon/lossofknowledge_lightning",
+    "spellrigins:lon/lossofknowledge_aqua",
+    "spellrigins:lon/lossofknowledge_ice",
+    "spellrigins:lon/lossofknowledge_ender",
+    "spellrigins:lon/lossofknowledge"
+  ],
+  "icon": "irons_spellbooks:evocation_upgrade_orb",
+  "order": 4,
+  "impact": 3,
+  "name": "Evocation Specialist",
+  "description": "Master of all pillaging spells"
+}

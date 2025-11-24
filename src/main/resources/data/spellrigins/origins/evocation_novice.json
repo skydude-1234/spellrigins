@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:evocation/evocation_bonus_novice"
+  ],
+  "icon": "minecraft:emerald",
+  "description": "Wannabe Evoker",
+  "order": 4,
+  "impact": 1,
+  "name": "Evocation Novice"
+}
