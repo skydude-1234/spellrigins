@@ -24,6 +24,8 @@ import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
+import io.redspace.ironsspellbooks.api.util.Utils;
+import io.redspace.ironsspellbooks.entity.mobs.SummonedVex;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.minecraft.commands.CommandSourceStack;
@@ -33,6 +35,7 @@ import net.minecraft.network.chat.ComponentContents;
 import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.damagesource.DamageSource;
@@ -41,10 +44,12 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -91,6 +96,7 @@ public class spellattackevent {
                     event.getEntity().hurt(event.getEntity().damageSources().magic(), (float) (event.getAmount() * 0.1));
                 }
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
+              // 30% chance * lightning power
                 if (Math.random() <= 0.3 * attacker.getAttributeValue(AttributeRegistry.LIGHTNING_SPELL_POWER.get())) {
 
 
@@ -104,6 +110,28 @@ public class spellattackevent {
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:blood/devour") == 1) {
                 if (Math.random() <= 0.1 * attacker.getAttributeValue(AttributeRegistry.BLOOD_SPELL_POWER.get())) {
                     player.getServer().getCommands().performPrefixedCommand(silentSource, "cast " +  player.getName().getString() + " devour " + 3);
+
+                }
+            } else {
+                if (Math.random() <= 0.1 * attacker.getAttributeValue(AttributeRegistry.EVOCATION_SPELL_POWER.get())) {
+                    // if the cooldown is above ~9 minutes, cancel the summon to not have 10 billion summons
+                    if (player.getEffect(MobEffectRegistry.VEX_TIMER.get()) != null && player.getEffect(MobEffectRegistry.VEX_TIMER.get()).getDuration() >= 11000) {
+                        return;
+                    }
+                    int summonTime = 20 * 60 * 10;
+                    // summon 2 vex
+                    for (int i = 0; i < 2; i++) {
+                        SummonedVex vex = new SummonedVex(player.level(), player);
+                        vex.moveTo(player.getEyePosition().add(new Vec3(Utils.getRandomScaled(2), 1, Utils.getRandomScaled(2))));
+                        vex.finalizeSpawn((ServerLevel) player.level(), player.level().getCurrentDifficultyAt(vex.getOnPos()), MobSpawnType.MOB_SUMMONED, null, null);
+                        vex.addEffect(new MobEffectInstance(MobEffectRegistry.VEX_TIMER.get(), 12000, 0, false, false, false));
+                        player.level().addFreshEntity(vex);
+                    }
+
+                    int effectAmplifier = 2 - 1;
+                    if (player.hasEffect(MobEffectRegistry.VEX_TIMER.get()))
+                        effectAmplifier += player.getEffect(MobEffectRegistry.VEX_TIMER.get()).getAmplifier() + 1;
+                    player.addEffect(new MobEffectInstance(MobEffectRegistry.VEX_TIMER.get(), summonTime, effectAmplifier, false, false, true));
 
                 }
             }
