@@ -24,6 +24,9 @@
     "spellrigins:blood_specialist",
     "spellrigins:evocation_novice",
     "spellrigins:evocation_intermediate",
-    "spellrigins:evocation_specialist"
+    "spellrigins:evocation_specialist",
+    "spellrigins:ender_novice",
+    "spellrigins:ender_intermediate",
+    "spellrigins:ender_specialist"
   ]
 }

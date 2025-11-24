@@ -1,0 +1,5 @@
+{
+  "type": "origins:multiple",
+  "name": "Evade",
+  "description": "When teleporting, you gain one ender evasion charge (max 2) that allows you to dodge one attack. Dodge effect duration scales with ender spell power"
+}

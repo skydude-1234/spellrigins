@@ -18,9 +18,12 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.monster.Endermite;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
+import net.minecraftforge.event.entity.living.EnderManAngerEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -126,10 +129,19 @@ public class ModEvents {
     public static void onTeleport(EntityTeleportEvent event) {
             // server only
             if (event.getEntity() instanceof ServerPlayer player) {
-            //    if (player.getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + player.getName().getString() + " spellrigins:blood/devour") == 1) {
+                if (player.getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + player.getName().getString() + " spellrigins:ender/enderbility") == 1) {
 
                     player.addEffect(new MobEffectInstance(MobEffectRegistry.EVASION.get(), (int) (300 * player.getAttributeValue(AttributeRegistry.ENDER_SPELL_POWER.get())), 1, false, false, true));
                 }
-           // }
+            }
+    }
+    @SubscribeEvent
+    public static void onTelseport(EnderManAngerEvent event) {
+        // server only
+        if (event.getPlayer() instanceof ServerPlayer player) {
+            if (player.getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + player.getName().getString() + " spellrigins:ender/enderspellresist") == 1) {
+            event.setCanceled(true);
+            }
+        }
     }
 }

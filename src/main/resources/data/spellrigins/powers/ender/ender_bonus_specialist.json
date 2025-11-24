@@ -1,9 +1,10 @@
 {
   "type": "apoli:attribute",
-  "hidden": "true",
+  "name": "Ender Power",
+  "description": "Gain +30% ender power",
   "modifier": {
     "attribute": "irons_spellbooks:ender_spell_power",
-    "value": -0.2,
+    "value": 0.30,
     "operation": "multiply_base"
   }
 }

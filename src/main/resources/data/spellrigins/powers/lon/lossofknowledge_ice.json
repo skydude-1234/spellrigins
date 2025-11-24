@@ -3,7 +3,7 @@
   "hidden": "true",
   "modifier": {
     "attribute": "irons_spellbooks:ice_spell_power",
-    "value": -0.1,
+    "value": -0.2,
     "operation": "multiply_base"
   }
 }

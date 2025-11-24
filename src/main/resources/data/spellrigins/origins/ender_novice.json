@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "spellrigins:ender/ender_bonus_novice"
+  ],
+  "icon": "minecraft:ender_pearl",
+  "order": 2,
+  "impact": 1,
+  "name": "Ender Novice",
+  "description" : "Enderling"
+}

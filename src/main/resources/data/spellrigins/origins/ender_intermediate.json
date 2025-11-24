@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "spellrigins:ender/ender_bonus_intermediate",
+    "spellrigins:ender/aqua_weakness",
+    "spellrigins:ender/enderbility"
+  ],
+  "icon": "irons_spellbooks:ender_rune",
+  "order": 3,
+  "impact": 2,
+  "name": "Ender Intermediate",
+  "description": "Enderman"
+}
