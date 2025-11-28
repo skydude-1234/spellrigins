@@ -1,0 +1,49 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 1,
+  "condition": {
+    "type": "apoli:resource",
+    "resource": "spellrigins:eldritch/runonce",
+    "comparison": ">",
+    "compare_to": 0
+  },
+  "entity_action": {
+
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn abyssal_shroud"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn telekinesis"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn planar_sight"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn sonic_boom"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn sculk_tentacles"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "learnSpell learn eldritch_blast"
+      },
+      {
+
+        "type": "apoli:change_resource",
+        "resource": "spellrigins:eldritch/runonce",
+        "change": -1
+      }
+    ]
+  },
+  "name": "Eldritch Knowledge",
+  "description": "Once you choose this path, you learn about horrors no man should've ever known. You automatically learn all 6 default eldritch spells",
+  "execute_chosen_when_orb": true
+}

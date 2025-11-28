@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Eldritch Power",
+  "description": "Gain +30% eldritch power",
+  "modifier": {
+    "attribute": "irons_spellbooks:eldritch_spell_power",
+    "value": 0.30,
+    "operation": "multiply_base"
+  }
+}

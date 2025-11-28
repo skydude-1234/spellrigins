@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Member of Eldritch",
+  "description": "Gain resistance to eldritch spells",
+  "modifier": {
+    "attribute": "irons_spellbooks:eldritch_magic_resist",
+    "value": 1,
+    "operation": "addition"
+  }
+}

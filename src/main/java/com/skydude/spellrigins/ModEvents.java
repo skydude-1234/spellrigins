@@ -1,13 +1,17 @@
 package com.skydude.spellrigins;
 
+import io.github.edwinmindcraft.origins.common.OriginsEventHandler;
+import io.github.edwinmindcraft.origins.common.condition.OriginCondition;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
 
 
 import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
+import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedVex;
+import io.redspace.ironsspellbooks.network.ServerboundLearnSpell;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.chat.Component;
@@ -133,6 +137,7 @@ public class ModEvents {
 
                     player.addEffect(new MobEffectInstance(MobEffectRegistry.EVASION.get(), (int) (300 * player.getAttributeValue(AttributeRegistry.ENDER_SPELL_POWER.get())), 1, false, false, true));
                 }
+
             }
     }
     @SubscribeEvent

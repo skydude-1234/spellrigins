@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "spellrigins:eldritch/eldritch_bonus_specialist",
+    "spellrigins:holy_fragility",
+    "spellrigins:eldritch/eldritch_knowledge",
+    "spellrigins:eldritch/runonce",
+    "spellrigins:eldritch/eldritchspellresist",
+    "spellrigins:lon/lossofknowledge_blood",
+    "spellrigins:lon/lossofknowledge_fire",
+    "spellrigins:lon/lossofknowledge_holy",
+    "spellrigins:lon/lossofknowledge_nature",
+    "spellrigins:lon/lossofknowledge_lightning",
+    "spellrigins:lon/lossofknowledge_evocation",
+    "spellrigins:lon/lossofknowledge_ender",
+    "spellrigins:lon/lossofknowledge_ice",
+    "spellrigins:lon/lossofknowledge_aqua",
+    "spellrigins:lon/lossofknowledge"
+  ],
+  "icon": "irons_spellbooks:eldritch_manuscript",
+  "order": 12,
+  "impact": 3,
+  "name": "The Unknown",
+  "description": "You are a being that has learned what mustn't be learned"
+}
