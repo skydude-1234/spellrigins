@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "spellrigins:spellprotect",
+    "spellrigins:nospells"
+  ],
+  "icon": "irons_spellbooks:spellbreaker",
+  "order": 13,
+  "impact": 3,
+  "name": "Spell Breaker",
+  "description": "Your sole purpose is to be the perfect counter to those dirty spell users"
+}

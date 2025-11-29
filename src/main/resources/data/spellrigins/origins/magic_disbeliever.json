@@ -1,0 +1,9 @@
+{
+  "powers": [
+  ],
+  "icon": "minecraft:iron_sword",
+  "order": 14,
+  "impact": 0,
+  "name": "Non Believer",
+  "description": "You dont believe in spells. Nothing happens"
+}

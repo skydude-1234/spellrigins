@@ -28,6 +28,8 @@
     "spellrigins:ender_novice",
     "spellrigins:ender_intermediate",
     "spellrigins:ender_specialist",
-    "spellrigins:eldritch_specialist"
+    "spellrigins:eldritch_specialist",
+    "spellrigins:magic_disbeliever",
+    "spellrigins:counterspell"
   ]
 }

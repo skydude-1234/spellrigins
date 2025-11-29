@@ -31,6 +31,8 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Objects;
+
 
 @Mod.EventBusSubscriber
 public class ModEvents {
@@ -115,6 +117,12 @@ public class ModEvents {
               event.getEntity().sendSystemMessage(Component.literal("Bow only to god"));
           }
       }
+      if(event.getEntity().getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + event.getEntity().getName().getString() + " spellrigins:nospells") == 1) {
+          if (!Objects.equals(event.getSpellId(), "irons_spellbooks:counterspell")) {
+              event.setCanceled(true);
+              System.out.println(event.getSpellId());
+          }
+      }
   }
     @SubscribeEvent
     public static void takelightningdamage(LivingDamageEvent event) {
@@ -141,7 +149,7 @@ public class ModEvents {
             }
     }
     @SubscribeEvent
-    public static void onTelseport(EnderManAngerEvent event) {
+    public static void onEndermanAnger(EnderManAngerEvent event) {
         // server only
         if (event.getPlayer() instanceof ServerPlayer player) {
             if (player.getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + player.getName().getString() + " spellrigins:ender/enderspellresist") == 1) {

@@ -1,0 +1,10 @@
+{
+  "type": "apoli:attribute",
+  "name": "Spell Resist",
+  "description": "Gain +100% spell resistance",
+  "modifier": {
+    "attribute": "irons_spellbooks:spell_resist",
+    "value": 1,
+    "operation": "multiply_base"
+  }
+}
