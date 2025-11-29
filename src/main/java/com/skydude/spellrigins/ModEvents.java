@@ -9,10 +9,12 @@ import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedVex;
 import io.redspace.ironsspellbooks.network.ServerboundLearnSpell;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
+import io.redspace.ironsspellbooks.spells.fire.HeatSurgeSpell;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -55,7 +57,10 @@ public class ModEvents {
             // command run
             if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:fire/spellflame") == 1) {
                 event.getEntity().setSecondsOnFire((int) (10 * player.getAttributeValue(AttributeRegistry.FIRE_SPELL_POWER.get())));
-
+                if (Math.random() <= 0.3 * attacker.getAttributeValue(AttributeRegistry.FIRE_SPELL_POWER.get())) {
+                    AbstractSpell spell = (new HeatSurgeSpell());
+                    spell.castSpell(player.level(), 3, player, MagicData.getPlayerMagicData(player).getCastSource(), false);
+                }
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellfreeze") == 1) {
                 event.getEntity().setTicksFrozen(10);
 
