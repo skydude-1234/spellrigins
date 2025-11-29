@@ -1,7 +1,7 @@
 {
   "powers": [
     "spellrigins:ender/ender_bonus_intermediate",
-    "spellrigins:ender/aqua_weakness",
+    "spellrigins:fire/aqua_weakness",
     "spellrigins:ender/enderbility"
   ],
   "icon": "irons_spellbooks:ender_rune",

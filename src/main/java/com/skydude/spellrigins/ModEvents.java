@@ -54,7 +54,7 @@ public class ModEvents {
 
             // command run
             if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:fire/spellflame") == 1) {
-                event.getEntity().setSecondsOnFire(10);
+                event.getEntity().setSecondsOnFire((int) (10 * player.getAttributeValue(AttributeRegistry.FIRE_SPELL_POWER.get())));
 
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:spellfreeze") == 1) {
                 event.getEntity().setTicksFrozen(10);
