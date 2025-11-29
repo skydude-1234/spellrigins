@@ -31,7 +31,7 @@
   "power.spellrigins.fire_weakness.description": "You are weak to & with fire spells",
   "power.spellrigins.ice_bonus_intermediate.description": "Gain +20% ice spell power",
   "power.spellrigins.spellfreeze.description": "Your spells freeze enemies for 10s",
-  "power.spellrigins.icespellresist.description": "The ice cannot be frozen, and neither can you. Gain resistance to ice spells",
+  "power.spellrigins.icespellresist.description": "The ice cannot be frozen, and neither can you. Gain resistance to ice spells & you can no longer recieve the 'chilled' effect",
   "power.spellrigins.ice_bonus_specialist.description": "Gain +30% ice spell power",
   "power.spellrigins.fire_fragility.description": "You are very weak to & with fire spells",
   "origin.spellrigins.ice_specialist.description": "It has been long since you have seen anything other than the white and blue glory of the arctic",

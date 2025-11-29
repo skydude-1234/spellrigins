@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobType;
@@ -28,6 +29,7 @@ import net.minecraftforge.event.entity.EntityTeleportEvent;
 import net.minecraftforge.event.entity.living.EnderManAngerEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.MobEffectEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -157,4 +159,17 @@ public class ModEvents {
             }
         }
     }
+    @SubscribeEvent
+    public static void onRecieveEffect(MobEffectEvent.Applicable event) {
+        // server only
+        if (event.getEntity() instanceof ServerPlayer player) {
+            if (player.getServer().getCommands().performPrefixedCommand(event.getEntity().createCommandSourceStack().withSuppressedOutput().withPermission(4), "power has " + player.getName().getString() + " spellrigins:icespellresist") == 1) {
+
+                if (event.getEffectInstance().getEffect() == MobEffectRegistry.CHILLED.get()) {
+                    event.setCanceled(true);
+                }
+            }
+        }
+    }
+
 }
