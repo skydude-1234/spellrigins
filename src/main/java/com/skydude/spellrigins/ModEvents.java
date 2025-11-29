@@ -88,7 +88,7 @@ public class ModEvents {
 
                 if (Math.random() <= 0.1 * attacker.getAttributeValue(AttributeRegistry.EVOCATION_SPELL_POWER.get())) {
                     // if the cooldown is above ~9 minutes, cancel the summon to not have 10 billion summons
-                    if (player.getEffect(MobEffectRegistry.VEX_TIMER.get()) != null && player.getEffect(MobEffectRegistry.VEX_TIMER.get()).getDuration() >= 11000) {
+                    if (player.getEffect(MobEffectRegistry.VEX_TIMER.get()) != null && player.getEffect(MobEffectRegistry.VEX_TIMER.get()).getDuration() >= 11700) {
                         return;
                     }
                     int summonTime = 20 * 60 * 10;
