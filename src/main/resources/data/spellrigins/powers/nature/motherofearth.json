@@ -1,0 +1,11 @@
+{
+  "type": "apoli:attribute",
+  "name": "Mother of Earth",
+  "description": "The children shall not hurt their mother, gain resistance to nature spells",
+  "modifier": {
+    "name": "Nature Spell protect",
+    "attribute": "irons_spellbooks:nature_magic_resist",
+    "value": 2,
+    "operation": "multiply_base"
+  }
+}

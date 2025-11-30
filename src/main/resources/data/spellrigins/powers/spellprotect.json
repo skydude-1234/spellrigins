@@ -4,7 +4,7 @@
   "description": "Gain +100% spell resistance",
   "modifier": {
     "attribute": "irons_spellbooks:spell_resist",
-    "value": 1,
+    "value": 2,
     "operation": "multiply_base"
   }
 }
