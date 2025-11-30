@@ -1,16 +1,17 @@
 {
   "type": "origins:multiple",
-  "name": "Aqua lon",
-  "hidden:": false,
+  "name": "Aqua Power",
+  "description": "Gain +20% aqua power",
   "aqua": {
     "type": "apoli:attribute",
     "condition": {
       "type": "origins:mod_loaded",
       "modid": "traveloptics"
     },
-    "modifiers": [{
+    "modifiers": [
+       {
         "attribute": "traveloptics:aqua_spell_power",
-        "value": -0.2,
+        "value": 0.20,
         "operation": "multiply_base"
       }
     ]

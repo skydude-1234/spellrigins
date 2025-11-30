@@ -112,8 +112,11 @@ public class ModEvents {
                     player.addEffect(new MobEffectInstance(MobEffectRegistry.VEX_TIMER.get(), summonTime, effectAmplifier, false, false, true));
 
                 }
+            }  else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:aqua/wet") == 1) {
+                // cast command to only apply if mod loaded, + no dependency needed
+                player.getServer().getCommands().performPrefixedCommand(silentSource, "effect give " + event.getEntity().getStringUUID() + " traveloptics:wet" + " 200" + " 2");
             }
-        }
+            }
     }
   @SubscribeEvent
     public static void spellcast(SpellPreCastEvent event){

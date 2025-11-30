@@ -1,0 +1,15 @@
+{
+  "condition": {
+    "type": "origins:mod_loaded",
+    "modid": "traveloptics"
+  },
+  "powers": [
+    "spellrigins:aqua/aqua_bonus_novice"
+  ],
+  "icon": "alexscaves:pearl",
+  "order": 2,
+  "impact": 1,
+
+  "name": "Aqua Novice",
+  "description": "Da sea"
+}

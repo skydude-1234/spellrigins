@@ -1,0 +1,16 @@
+{
+  "condition": {
+    "type": "origins:mod_loaded",
+    "modid": "traveloptics"
+  },
+  "powers": [
+    "spellrigins:aqua/aqua_bonus_intermediate",
+    "spellrigins:aqua/wet",
+    "spellrigins:lightning_weakness"
+  ],
+  "icon": "traveloptics:aqua_rune",
+  "order": 3,
+  "impact": 2,
+  "name": "Aqua Intermediate",
+  "description": "Sea bearer"
+}

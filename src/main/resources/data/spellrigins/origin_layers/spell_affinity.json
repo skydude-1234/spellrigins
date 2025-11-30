@@ -30,6 +30,9 @@
     "spellrigins:ender_specialist",
     "spellrigins:eldritch_specialist",
     "spellrigins:magic_disbeliever",
-    "spellrigins:counterspell"
+    "spellrigins:counterspell",
+    "spellrigins:aqua_novice",
+    "spellrigins:aqua_intermediate",
+    "spellrigins:aqua_specialist"
   ]
 }
