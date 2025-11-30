@@ -70,7 +70,7 @@ public class ModEvents {
 
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:holy/smite") == 1) {
                 if (event.getEntity().getMobType() == MobType.UNDEAD) {
-                    event.getEntity().hurt(event.getEntity().damageSources().magic(), (float) (event.getAmount() * 0.1));
+                    event.setAmount((float) (event.getAmount() * 2));
                 }
             } else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:lightning/lightningsummon") == 1) {
               // 30% chance * lightning power

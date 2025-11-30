@@ -51,6 +51,6 @@
   "power.spellrigins.holy/holy_bonus_specialist.description": "Gain +30% holy spell power",
   "power.spellrigins.holy/bowonlytogod.description": "You become resistant to and unable to use blood and eldritch spells. You are not weak nor fragile to any spell school",
   "origin.spellrigins.holy_specialist.description": "The holiest of them all",
-  "power.spellrigins.holy/smite.description": "Deal +10% spell damage to undead enemies",
+  "power.spellrigins.holy/smite.description": "Deal 2x spell damage to undead enemies",
   "power.spellrigins.holy/holy_bonus_intermediate.name": "Holy Power"
 }
