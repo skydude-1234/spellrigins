@@ -1,0 +1,15 @@
+{
+  "condition": {
+    "type": "origins:mod_loaded",
+    "modid": "gtbcs_geomancy_plus"
+  },
+  "powers": [
+    "spellrigins:geo/geo_bonus_novice"
+  ],
+  "icon": "mowziesmobs:bluff_rod",
+  "order": 2,
+  "impact": 1,
+
+  "name": "Geo Novice",
+  "description": "Da ground"
+}

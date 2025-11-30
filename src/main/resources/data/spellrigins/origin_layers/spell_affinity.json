@@ -33,6 +33,9 @@
     "spellrigins:counterspell",
     "spellrigins:aqua_novice",
     "spellrigins:aqua_intermediate",
-    "spellrigins:aqua_specialist"
+    "spellrigins:aqua_specialist",
+    "spellrigins:geo_novice",
+    "spellrigins:geo_intermediate",
+    "spellrigins:geo_specialist"
   ]
 }

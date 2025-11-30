@@ -1,15 +1,15 @@
 {
   "condition": {
     "type": "origins:mod_loaded",
-    "modid": "traveloptics"
+    "modid": "gtbcs_geomancy_plus"
   },
   "type": "origins:multiple",
-  "name": "Aqua lon",
+  "name": "geo lon",
   "hidden:": false,
   "aqua": {
     "type": "apoli:attribute",
     "modifiers": [{
-        "attribute": "traveloptics:aqua_spell_power",
+        "attribute": "gtbcs_geomancy_plus:geo_spell_power",
         "value": -0.2,
         "operation": "multiply_base"
       }

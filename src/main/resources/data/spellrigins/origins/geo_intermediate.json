@@ -1,0 +1,16 @@
+{
+  "condition": {
+    "type": "origins:mod_loaded",
+    "modid": "gtbcs_geomancy_plus"
+  },
+  "powers": [
+    "spellrigins:geo/geo_bonus_intermediate",
+    "spellrigins:geo/tremor",
+    "spellrigins:fire/ice_weakness"
+  ],
+  "icon": "gtbcs_geomancy_plus:geo_rune",
+  "order": 3,
+  "impact": 2,
+  "name": "Geo Intermediate",
+  "description": "Ground pounder"
+}

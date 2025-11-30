@@ -1,0 +1,19 @@
+{
+  "type": "origins:multiple",
+  "name": "Among the sculptors",
+  "description": "Gain resistance to geo spells",
+  "aqua": {
+    "type": "apoli:attribute",
+    "condition": {
+      "type": "origins:mod_loaded",
+      "modid": "gtbcs_geomancy_plus"
+    },
+    "modifiers": [
+      {
+        "attribute": "gtbcs_geomancy_plus:geo_magic_resist",
+        "value": 2,
+        "operation": "multiply_base"
+      }
+    ]
+  }
+}

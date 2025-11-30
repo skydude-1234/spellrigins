@@ -1,0 +1,29 @@
+{
+  "condition": {
+    "type": "origins:mod_loaded",
+    "modid": "gtbcs_geomancy_plus"
+  },
+  "powers": [
+    "spellrigins:geo/geo_bonus_specialist",
+    "spellrigins:geo/tremor",
+    "spellrigins:geo/geospellresist",
+    "spellrigins:fire/ice_fragility",
+    "spellrigins:lon/lossofknowledge_fire",
+    "spellrigins:lon/lossofknowledge_holy",
+    "spellrigins:lon/lossofknowledge_blood",
+    "spellrigins:lon/lossofknowledge_eldritch",
+    "spellrigins:lon/lossofknowledge_evocation",
+    "spellrigins:lon/lossofknowledge_ender",
+    "spellrigins:lon/lossofknowledge_nature",
+    "spellrigins:lon/lossofknowledge_lightning",
+    "spellrigins:lon/lossofknowledge_ice",
+    "spellrigins:lon/lossofknowledge_aqua",
+    "spellrigins:lon/lossofknowledge"
+  ],
+
+  "icon": "gtbcs_geomancy_plus:geo_upgrade_orb",
+  "order": 11,
+  "impact": 3,
+  "name": "Geo Specialist",
+  "description": "Better than the sculptor"
+}

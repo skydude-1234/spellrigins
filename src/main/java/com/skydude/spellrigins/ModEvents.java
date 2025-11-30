@@ -115,7 +115,11 @@ public class ModEvents {
             }  else if (player.getServer().getCommands().performPrefixedCommand(silentSource, "power has " + player.getName().getString() + " spellrigins:aqua/wet") == 1) {
                 // cast command to only apply if mod loaded, + no dependency needed
                 player.getServer().getCommands().performPrefixedCommand(silentSource, "effect give " + event.getEntity().getStringUUID() + " traveloptics:wet" + " 200" + " 2");
-            }
+                }
+            } else if (event.getEntity() instanceof ServerPlayer player){
+                if (player.getServer().getCommands().performPrefixedCommand(player.createCommandSourceStack().withSuppressedOutput(), "power has " + player.getName().getString() + " spellrigins:geo/tremor") == 1) {
+                    player.getServer().getCommands().performPrefixedCommand(player.createCommandSourceStack().withSuppressedOutput(), "effect give " + player.getName().getString() + " gtbcs_geomancy_plus:tremor_step_effect" + " 100" + " 2");
+                }
             }
     }
   @SubscribeEvent

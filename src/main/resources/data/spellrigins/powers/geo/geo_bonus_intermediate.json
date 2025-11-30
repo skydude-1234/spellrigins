@@ -1,0 +1,19 @@
+{
+  "type": "origins:multiple",
+  "name": "Geo Power",
+  "description": "Gain +20% geo power",
+  "geo": {
+    "type": "apoli:attribute",
+    "condition": {
+      "type": "origins:mod_loaded",
+      "modid": "gtbcs_geomancy_plus"
+    },
+    "modifiers": [
+       {
+        "attribute": "gtbcs_geomancy_plus:geo_spell_power",
+        "value": 0.20,
+        "operation": "multiply_base"
+      }
+    ]
+  }
+}

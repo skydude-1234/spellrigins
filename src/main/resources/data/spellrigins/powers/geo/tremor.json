@@ -1,0 +1,5 @@
+{
+  "type": "origins:multiple",
+  "name": "Tremor",
+  "description": "When hit by a spell, gain tremor step for 5 seconds, increasing movement speed by 7.5% and dealing aoe damage while sprinting"
+}
