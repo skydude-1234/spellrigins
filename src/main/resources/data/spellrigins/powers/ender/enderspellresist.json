@@ -4,7 +4,7 @@
   "description": "You become resistant to ender spells and considered of ender kin, endermen will no longer anger when you gaze at them",
   "modifier": {
     "attribute": "irons_spellbooks:ender_magic_resist",
-    "value": 1,
-    "operation": "addition"
+    "value": 2,
+    "operation": "multiply_base"
   }
 }

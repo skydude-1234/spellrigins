@@ -1,0 +1,11 @@
+{
+  "type": "apoli:attribute",
+  "name": "Fellow Evokers",
+  "description": "Evokers do not harm each other.",
+  "modifier": {
+    "name": "evok Spell protect",
+    "attribute": "irons_spellbooks:evocation_magic_resist",
+    "value": 2,
+    "operation": "multiply_base"
+  }
+}

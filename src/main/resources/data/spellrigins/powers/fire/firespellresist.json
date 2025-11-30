@@ -3,7 +3,7 @@
   "name": "Friendly Fire",
   "modifier": {
     "attribute": "irons_spellbooks:fire_magic_resist",
-    "value": 1,
-    "operation": "addition"
+    "value": 2,
+    "operation": "multiply_base"
   }
 }
