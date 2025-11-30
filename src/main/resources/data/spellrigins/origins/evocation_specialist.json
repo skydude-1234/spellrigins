@@ -2,6 +2,7 @@
   "powers": [
     "spellrigins:evocation/evocation_bonus_specialist",
     "spellrigins:evocation/evocationsummon",
+    "spellrigins:evocation/fellowevokers",
     "spellrigins:evocation/blood_fragility",
     "spellrigins:lon/lossofknowledge_blood",
     "spellrigins:lon/lossofknowledge_eldritch",
