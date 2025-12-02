@@ -1,7 +1,6 @@
 {
   "powers": [
     "spellrigins:fire/fire_bonus_specialist",
-    "spellrigins:fire/ice_fragility",
     "spellrigins:fire/aqua_fragility",
     "spellrigins:fire/spellflame",
     "spellrigins:fire/firespellresist",
