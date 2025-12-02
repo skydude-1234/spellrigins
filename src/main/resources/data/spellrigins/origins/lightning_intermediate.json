@@ -1,6 +1,7 @@
 {
   "powers": [
     "spellrigins:lightning/lightning_bonus_intermediate",
+    "spellrigins:geo_weakness",
     "spellrigins:lightning/lightningsummon"
   ],
   "icon": "irons_spellbooks:lightning_rune",

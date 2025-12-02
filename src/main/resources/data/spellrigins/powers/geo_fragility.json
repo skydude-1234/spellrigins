@@ -3,25 +3,26 @@
   "name": "Aqua Fragility",
   "description": "You are very weak to & with aqua spells",
 
-  "aqua_fragility": {
+  "geo": {
     "type": "origins:attribute",
     "modifiers": [
       {
-        "attribute": "traveloptics:aqua_magic_resist",
+        "attribute": "gtbcs_geomancy_plus:geo_magic_resist",
         "value": -0.6,
         "operation": "multiply_base"
       },
       {
-        "attribute": "traveloptics:aqua_spell_power",
+        "attribute": "gtbcs_geomancy_plus:geo_spell_power",
         "value": -0.5,
         "operation": "multiply_base"
       }
     ],
     "condition": {
       "type": "origins:mod_loaded",
-      "modid": "traveloptics"
+      "modid": "gtbcs_geomancy_plus"
     }
   },
 
   "hide_if_inactive": true
 }
+

@@ -2,6 +2,7 @@
   "powers": [
     "spellrigins:lightning/lightning_bonus_specialist",
     "spellrigins:lightning/lightningsummon",
+    "spellrigins:geo_fragility",
     "spellrigins:lon/lossofknowledge_fire",
     "spellrigins:lon/lossofknowledge_holy",
     "spellrigins:lon/lossofknowledge_blood",
