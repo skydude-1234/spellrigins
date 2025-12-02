@@ -1,14 +1,15 @@
 {
-  "condition": {
-    "type": "origins:mod_loaded",
-    "modid": "traveloptics"
-  },
   "type": "origins:multiple",
   "name": "Aqua lon",
-  "hidden:": false,
+  "hidden": "true",
   "aqua": {
     "type": "apoli:attribute",
-    "modifiers": [{
+    "condition": {
+      "type": "origins:mod_loaded",
+      "modid": "traveloptics"
+    },
+    "modifiers": [
+      {
         "attribute": "traveloptics:aqua_spell_power",
         "value": -0.2,
         "operation": "multiply_base"

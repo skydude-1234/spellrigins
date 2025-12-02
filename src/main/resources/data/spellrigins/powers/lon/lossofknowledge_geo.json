@@ -1,14 +1,15 @@
 {
-  "condition": {
-    "type": "origins:mod_loaded",
-    "modid": "gtbcs_geomancy_plus"
-  },
   "type": "origins:multiple",
-  "name": "geo lon",
-  "hidden:": false,
+  "name": "Aqua lon",
+  "hidden": "true",
   "aqua": {
     "type": "apoli:attribute",
-    "modifiers": [{
+    "condition": {
+      "type": "origins:mod_loaded",
+      "modid": "gtbcs_geomancy_plus"
+    },
+    "modifiers": [
+      {
         "attribute": "gtbcs_geomancy_plus:geo_spell_power",
         "value": -0.2,
         "operation": "multiply_base"
