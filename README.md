@@ -3,10 +3,12 @@ This mod is compatibility between [Origins](https://www.curseforge.com/minecraft
 
 
 
-
+![<img alt="Curse Forge" src](https://img.shields.io/curseforge/dt/1286233)
 # New Origins
+[![](https://cf.way2muchnoise.eu/full_238222_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/dungeons-and-combat)
 
 <div align="center">
+
 
 
 ![](https://media.forgecdn.net/attachments/1410/945/screenshot_01122025_212158-jpg.jpg)

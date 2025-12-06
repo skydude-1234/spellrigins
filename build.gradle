@@ -1,4 +1,5 @@
 buildscript {
+    ext.kotlin_version = '2.2.20'
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
@@ -6,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -16,6 +18,7 @@ plugins {
 }
 
 apply plugin: 'org.spongepowered.mixin'
+apply plugin: 'kotlin'
 
 group = mod_group_id
 version = mod_version
@@ -168,6 +171,7 @@ repositories {
             includeGroup("com.eliotlash.mclib")
         }
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -216,6 +220,7 @@ dependencies {
     // GECKOLIB ***************************************************************************************************
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
 }
 
@@ -259,4 +264,7 @@ tasks.withType(JavaCompile).configureEach {
 mixin {
     //  refmap
     add sourceSets.main, "mixins.dacxirons.refmap.json"
+}
+kotlin {
+    jvmToolchain(17)
 }
