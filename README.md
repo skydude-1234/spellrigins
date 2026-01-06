@@ -37,11 +37,3 @@ Skydude's Spell Origins has 2 extra compatablities with [T.O's Magic N Extras](h
 </div>
 
 Abilities can range from having a chance to cast a spell or summon creatures to your aid. The chances of an ability being triggered and its duration will scale based off of the respective origin's spell school. While every origin has an ability, some weaker abilities may be supplemented with an extra, more passive ability.
-
-<div align="center">
-  <a href="https://moonshot.hackclub.com" target="_blank">
-    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/35ad2be8c916670f3e1ac63c1df04d76a4b337d1_moonshot.png" 
-         alt="This project is part of Moonshot, a 4-day hackathon in Florida visiting Kennedy Space Center and Universal Studios!" 
-         style="width: 100%;">
-  </a>
-</div>
